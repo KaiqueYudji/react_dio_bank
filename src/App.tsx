@@ -1,5 +1,6 @@
 import { ChakraProvider, Input, Box, Center, Button } from '@chakra-ui/react';
 import { login } from './services/login';
+import { Header } from './components/Header/Header';
 
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
     <div className="App">
       <ChakraProvider>
 
-        <Box minHeight="100vh" backgroundColor="#9413dc" padding="25px">
-
+        <Box minHeight="100vh" backgroundColor="#9413dc" padding="25px" alignContent="center">
+          <Header/>
           <Box backgroundColor="white" borderRadius="25px" padding="15px">
             <Center>
               <h1>Faça o login</h1> 
