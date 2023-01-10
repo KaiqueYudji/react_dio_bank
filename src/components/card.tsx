@@ -1,5 +1,18 @@
-export const Card = () => {
+import { Box, Text } from "@chakra-ui/react"
+
+interface ICardInfo {
+    mainContent: string;
+    content: string;
+}
+
+export const Card = ({ mainContent, content }: ICardInfo) => {
     return(
-        <div>CARD</div>
+        <Box backgroundColor="white" minHeight="120px" padding={8} borderRadius="25px">
+            <Text fontSize="2xl" fontWeight="bold">{mainContent}</Text>
+            <Text fontSize="xl">{content}</Text>
+
+            
+        </Box>
+
     )
 }
