@@ -26,11 +26,11 @@ function App() {
 
 
  let storage = get_all_local_storage();
- if(storage){
-    if(JSON.parse(storage).login = true){
+  if(storage){
+    if(JSON.parse(storage).login){console.log("here")
       navigate(`/conta/${JSON.parse(storage).id}`)
-    }
- }
+    } 
+ } 
 
  
  
