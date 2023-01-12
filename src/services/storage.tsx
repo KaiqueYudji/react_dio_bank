@@ -6,12 +6,14 @@ interface IDioBank{
   user?: string;
   id?: number;
   login: boolean;
+  email?: string;
 }
 
 const dioBank = {
     user:'',
     id:0,
-    login:false
+    login:false,
+    email: "yudjikaiquee@gmail.com"
 }
 
 

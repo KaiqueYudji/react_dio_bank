@@ -54,7 +54,7 @@ function App() {
       if(login){
         alert("Login efetuadp com sucesso!✅");
         setisLoggedIn(true);
-        change_local_storage({ user: user_data?.name, id:Number(user_data?.id), login: true })
+        change_local_storage({ user: user_data?.name, id:Number(user_data?.id), login: true, email: email })
         navigate(`/conta/${user_data?.id}`)
       }else{
         alert("Email inválido.")

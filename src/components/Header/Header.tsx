@@ -28,7 +28,7 @@ export const Header = () => {
             isLoggedIn && (//se miha variável isLoggedIn for verdadeiro, eu vou exibir o botão de sair da conta, se não, vou ocultar o botão
                 <>
                 <Spacer />
-                <h1>Olá { storage && JSON.parse(storage).user }</h1>
+                <h1>Olá { storage && JSON.parse(storage).user }({ storage && JSON.parse(storage).email })</h1>
                 <Spacer />
                 <Button backgroundColor="white" width="40px" onClick={ () => logout() }>
                     Sair
@@ -37,6 +37,7 @@ export const Header = () => {
                 </>
             )
         }
+
         </Flex>
     )
 }
